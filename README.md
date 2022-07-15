@@ -1,5 +1,9 @@
 # docker-compose-php
 
-docker-compose up -d
+git clone https://github.com/kbhatiya999/docker-compose-php.git
 
-http://localhost:8009
+```
+cd docker-compose-php
+docker-compose up -d
+```
+Open your browser and go to http://localhost:8009/
