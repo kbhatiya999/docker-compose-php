@@ -1,0 +1,13 @@
+services:
+  php-service:
+    build: .
+    container_name: php
+    ports:
+      - "8009:80"
+#    volumes:
+#      - ./src:/var/www/html
+    healthcheck:
+      test: ["CMD", "php", "-v"]
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
